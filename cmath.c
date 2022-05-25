@@ -21,7 +21,7 @@ double sqrt(double value){
 // This is great for small inputs
 double exp(double exponent){
     double output = 0;
-    for (int i = 0; i < 100; i++){
+    for (int i = 0; i < 10; i++){
         output += recursive_pow(exponent, i) / recursive_factorial(i);
     }
     return output;
