@@ -1,3 +1,4 @@
+#define PI 3.1415
 
 double recursive_pow(double base, int exponent){
     if (!exponent) {return 1;}
@@ -21,7 +22,7 @@ double sqrt(double value){
 // This is great for small inputs
 double exp(double exponent){
     double output = 0;
-    for (int i = 0; i < 10; i++){
+    for (int i = 0; i < 100; i++){
         output += recursive_pow(exponent, i) / recursive_factorial(i);
     }
     return output;
@@ -37,6 +38,15 @@ double fmod(double value, double mod){
 int quotient(double value, double mod){
     int mult = value / mod;
     return mult * mod;
+}
+
+// Sin
+double sin(double angle){
+    double output = 0;
+    angle = fmod(angle, 2 * PI);
+    for (int i = 0; i < 10; i++){
+        output += recursive_pow(-1, 2*i + 1) * recursive_pow(angle, i) / recursive_factorial(i);
+    } 
 }
 
 // This should keep the accuracy for all reals
