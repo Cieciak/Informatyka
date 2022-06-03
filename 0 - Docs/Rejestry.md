@@ -17,9 +17,9 @@
 
 ### SP (Specjalnego użytku)
     NIE TYKAJ DOPUTY NIE WIESZ CO ROBISZ
-    - ESI 
-    - EDI 
-    - EBP 
-    - EIP 
-    - ESP
+    - RSI 
+    - RDI 
+    - RBP 
+    - RIP 
+    - RSP
     - EFLAGS
